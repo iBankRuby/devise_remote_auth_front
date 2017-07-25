@@ -1,0 +1,6 @@
+<%= form_tag('/users/sign_in', method: { action: 'post' }) do %>
+    Email: <input name="user[email]">
+    <br>
+    Password: <input name="user[password]">
+    <%= submit_tag 'Sign in' %>
+<% end %>
